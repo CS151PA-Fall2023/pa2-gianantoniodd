@@ -5,6 +5,7 @@
 #include <vector>
 #include <fstream>
 #include <iomanip>
+#include <cctype>
 using namespace std;
 struct Student
 {
@@ -23,6 +24,7 @@ void printPointers(vector <Student *> & pointers,int input);
 void printMenu();
 void collectValidInput(int &input);
 void searchFor(vector <Student *> & pointers, string s, int input);
+string compareValue(Student * s, int input);
 
 
 #endif
